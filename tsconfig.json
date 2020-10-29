@@ -2,11 +2,13 @@
   "compilerOptions": {
     "baseUrl": ".",
     "outDir": "lib",
-    "sourceMap": true,
-    "module": "commonjs",
+    "sourceMap": false,
+    "target": "ESNext",
+    "module": "ESNext",
     "moduleResolution": "node",
     "allowJs": false,
     "strict": true,
+    "declaration": true,
     "noUnusedLocals": true,
     "experimentalDecorators": true,
     "resolveJsonModule": true,
@@ -19,6 +21,6 @@
     }
   },
   "include": [
-    "src/**/*"
+    "src"
   ]
 }
