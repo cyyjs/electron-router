@@ -1,16 +1,17 @@
 ## electron-router
+![LICENSE](https://img.shields.io/github/license/cyyjs/electron-router)
+![npm (scoped)](https://img.shields.io/npm/v/@cyyjs/electron-router)
+Communicate asynchronously from the main process to renderer processes it's that simple！
 
-进程间调用就是这么简单
-
-## 安装
+## Install
 
 ```sh
 yarn add @cyyjs/electron-router
 ```
 
-## 使用
+## Usage
 
-### 主进程
+### Main
 
 ```js
 const router = require('@cyyjs/electron-router')
@@ -23,13 +24,23 @@ router.get('list', async (query) => {
     }
   }
 })
+
+router.post('save', async(data) => {})
+router.put('update', async(data) => {})
+router.delete('remove', async(id) => {})
 ```
 
-### 渲染进程
+### Render
 
 ```js
 const api = require('@cyyjs/electron-router')
 
 let { err, data } = await api.get('list', query)
 // data: { a: 1 }
+
+await api.post('save', {})
+await api.put('update', {})
+await api.delete('remove', id)
 ```
+
+

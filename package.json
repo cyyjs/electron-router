@@ -1,6 +1,6 @@
 {
   "name": "@cyyjs/electron-router",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "electron router",
   "main": "./lib/index.js",
   "license": "MIT",
@@ -10,11 +10,11 @@
     "test": "jest"
   },
   "dependencies": {
-    "electron": "^10.1.5"
+    "electron": "^12.0.1"
   },
   "author": {
     "name": "cyyjs",
-    "email": "cyy0418@qq.com"
+    "email": "cyyjs@cyyjs.com"
   },
   "repository": {
     "url": "git@github.com:cyyjs/electron-router.git"
