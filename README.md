@@ -1,6 +1,7 @@
 ## electron-router
 ![LICENSE](https://img.shields.io/github/license/cyyjs/electron-router)
 ![npm (scoped)](https://img.shields.io/npm/v/@cyyjs/electron-router)
+
 Communicate asynchronously from the main process to renderer processes it's that simple！
 
 ## Install
