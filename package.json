@@ -1,10 +1,11 @@
 {
   "name": "@cyyjs/electron-router",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "electron router",
   "main": "./lib/index.js",
   "license": "MIT",
   "scripts": {
+    "prepublish": "yarn build",
     "build": "yarn lint && rollup -c",
     "lint": "eslint src --ext .ts --fix",
     "test": "jest"
