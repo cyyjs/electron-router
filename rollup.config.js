@@ -27,7 +27,7 @@ const list = ['index', 'client', 'server'].map(name => {
     input: `./src/${name}.ts`,
     plugins,
     output: {
-      format: 'cjs',
+      format: 'es',
       file: `lib/${name}.js`,
     },
     external: ['electron']
