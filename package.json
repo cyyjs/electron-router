@@ -1,6 +1,6 @@
 {
   "name": "@cyyjs/electron-router",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "electron router",
   "main": "./lib/index.js",
   "license": "MIT",
@@ -8,7 +8,7 @@
     "prepublish": "yarn lint",
     "lint": "eslint lib --ext .js --fix"
   },
-  "dependencies": {
+  "peerDependencies": {
     "electron": "^12.0.1"
   },
   "author": {
